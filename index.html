@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bokifa</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1B6vHn6i6W8q8Yp+FZl5WgCB9W5p+X5p7UbnFbD8yM4Y1TtGJf5xH0hZ8t6l5WvZlw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <p>&lt; All books at least 50% off list prices every day &gt;</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo.png.png" alt="bokifa logo">
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search our store...">
+        <button><i class="fas fa-search"></i> Search</button>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="dropdowns">
+          <select>
+            <option>USD $</option>
+            <option>EUR €</option>
+            <option>INR ₹</option>
+          </select>
+          <select>
+            <option>ENGLISH</option>
+            <option>HINDI</option>
+            <option>FRENCH</option>
+          </select>
+        </div>
+
+        <div class="icons">
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+          <a href="#"><i class="fa-regular fa-heart"></i><span class="badge">0</span></a>
+          <a href="#"><i class="fas fa-bag-shopping"></i><span class="badge">0</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <ul>
+      <ul class="menuArea">
+<li class="dropdown">
+    <a href="index.html">Home ⌵</a>
+    <ul class="dropdown-menu">
+        <li><a href="index.html">Home Default</a></li>
+        <li><a href="index.html">Home V1</a></li>
+        <li><a href="index.html">Home V2</a></li>
+        <li><a href="index.html">Home V3</a></li>
+        <li><a href="index.html">Home V4</a></li>
+        <li><a href="index.html">Home V5</a></li>
+    </ul>
+</li>
+
+</ul>
+
+     <li class="shop-menu">
+    <a href="#">Shop ⌵</a>
+
+    <div class="shop-dropdown full-width">
+        <div class="dropdown-inner">
+
+            <!-- LEFT 3 COLUMNS -->
+            <div class="dropdown-left">
+
+                <div class="dropdown-col">
+                    <h4>SHOP LAYOUTS</h4>
+                    <a href="#">Left Sidebar</a>
+                    <a href="#">Collection Top</a>
+                    <a href="#">List Collection</a>
+                    <a href="#">Coupon</a>
+                </div>
+
+                <div class="dropdown-col">
+                    <h4>PRODUCT LAYOUTS</h4>
+                    <a href="#">Classic</a>
+                    <a href="#">Scroll Fixed</a>
+                    <a href="#">Left Thumbnail</a>
+                    <a href="#">Right Thumbnail</a>
+                    <a href="#">Without Thumbnail</a>
+                </div>
+
+                <div class="dropdown-col">
+                    <h4>PRODUCT TYPES</h4>
+                    <a href="#">With Video</a>
+                    <a href="#">Upssell</a>
+                    <a href="#">Crosssell</a>
+                    <a href="#">Soldout – In Coming</a>
+                    <a href="#">Product Countdown</a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT BANNER -->
+          <div class="banner-wrapper">
+    <img src="images/banner 3.webp" class="banner-img">
+
+    <div class="banner-text">
+        <p class="small-text sale-color">Five day sale!</p>
+
+        <h2 class="big-text">Save 50%</h2>
+        <p class="sub-text">Use code BIGSALE50 at checkout</p>
+        <button class="shop-btn">Shop Now</button>
+    </div>
+</div>
+
+</div>
+
+
+        </div>
+    </div>
+</li>
+
+      <li class="dropdown">
+    <a href="#"> Blogs ⌵</a>
+
+
+    <ul class="dropdown-menu">
+        <li><a href="#">Blog - Standard</a></li>
+        <li><a href="#">Blog - Grid</a></li>
+        <li><a href="#">Single Post</a></li>
+    </ul>
+</li>
+
+      <li class="dropdown">
+    <a href="#">Pages ⌵</a>
+    
+    <ul class="dropdown-menu">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="our.html">Our Team</a></li>
+        <li><a href="faqs.html">Faqs</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="error.html"> Error</a></li>
+
+    </ul>
+</li>
+            <a href="contact.html">Contact</a>
+    </ul>
+    <p>Need help? Call Us: <strong>+84 2500 888 33</strong></p>
+  </nav>
+  
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('homeMenu')">
+    Home <span>⌵</span>
+  </div>
+  <div id="homeMenu" class="mobile-submenu">
+    <a href="#">Home Default</a>
+    <a href="#">Home V1</a>
+    <a href="#">Home V2</a>
+    <a href="#">Home V3</a>
+    <a href="#">Home V4</a>
+    <a href="#">Home V5</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('shopMenu')">
+    Shop <span>⌵</span>
+  </div>
+  <div id="shopMenu" class="mobile-submenu">
+    <a href="#">Shop Layouts</a>
+    <a href="#">Product Layouts</a>
+    <a href="#">Product Types</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('blogMenu')">
+    Blogs <span>⌵</span>
+  </div>
+  <div id="blogMenu" class="mobile-submenu">
+    <a href="#">Blog - Standard</a>
+    <a href="#">Blog - Grid</a>
+    <a href="#">Single Post</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('pagesMenu')">
+    Pages <span>⌵</span>
+  </div>
+  <div id="pagesMenu" class="mobile-submenu">
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="our.html">Our Team</a>
+    <a href="faqs.html">Faqs</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="error.html">Error</a>
+  </div>
+
+  <a href="contact.html">Contact</a>
+</div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="subtitle">A brand new series.</p>
+      <h1 class="title">THE WORLD OF<br>YOUNG ADULT<br>BOOKS</h1>
+      <p class="offer">Save up to 15% on new releases.</p>
+      <a href="#" class="btn">Discover Now →</a>
+    </div>
+
+    <!-- Orange Sticker with Text -->
+    <div class="sticker">
+      <img src="images/sticker.png.png" alt="Discount Sticker">
+      <span class="sticker-text">15%<br>OFF</span>
+    </div>
+  </section>
+
+  <!-- STATS MARQUEE SECTION -->
+  <div class="stats-marquee">
+    <div class="stats-track">
+      <span>🌟 <strong>97%</strong> happy customers</span>
+      <span>🌟 <strong>15,254</strong> total books</span>
+      <span>🌟 <strong>1,258</strong> authors</span>
+      <span>🌟 <strong>20,898</strong> books sold</span>
+      <span>🌟 <strong>97%</strong> happy customers</span>
+      <span>🌟 <strong>15,254</strong> total books</span>
+      <span>🌟 <strong>1,258</strong> authors</span>
+      <span>🌟 <strong>20,898</strong> books sold</span>
+      <span>🌟 <strong>97%</strong> happy customers</span>
+      <span>🌟 <strong>15,254</strong> total books</span>
+      <span>🌟 <strong>1,258</strong> authors</span>
+      <span>🌟 <strong>20,898</strong> books sold</span>
+    </div>
+  </div>
+
+
+  <section class="highlights-section">
+    <div class="highlight-header">
+      <h2>This week's highlights</h2>
+      <button class="browse-btn">Browse All</button>
+    </div>
+
+    <div class="book-container">
+
+      <!-- Book Card 1 -->
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/book 1.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">A Short History Of Nearly Everything</h3>
+        <p class="author">By Alison Smith</p>
+
+        <div class="rating">★★★★★ <span>(0)</span></div>
+        <div class="price">$299.95</div>
+      </div>
+
+      <!-- Copy & Replace for more books -->
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/book 2.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+
+      <!-- Add 4 more similar cards here -->
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/book 3.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/book 4.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/book 5.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/book 6.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- top categories section -->
+  <section class="categories-section">
+    <div class="categories-header">
+      <h2>Top categories</h2>
+      <button class="browse-btn">Browse All →</button>
+    </div>
+
+    <div class="categories-container">
+
+      <div class="category-card">
+        <img src="images/fantasy C1.png" alt="Fantasy">
+        <p>Fantasy</p>
+      </div>
+
+      <div class="category-card">
+        <img src="images/horror C2.webp" alt="Horror">
+        <p>Horror</p>
+      </div>
+
+      <div class="category-card">
+        <img src="images/family C7.png" alt="Family">
+        <p>Family</p>
+      </div>
+
+      <div class="category-card">
+        <img src="images/fiction C3.webp" alt="Fiction">
+        <p>Fiction</p>
+      </div>
+
+      <div class="category-card">
+        <img src="images/romance c8.webp" alt="Romance">
+        <p>Romance</p>
+      </div>
+
+      <div class="category-card">
+        <img src="images/Kids C4.webp" alt="Kids">
+        <p>Kids</p>
+      </div>
+
+      <div class="category-card">
+        <img src="images/history C6.png" alt="History">
+        <p>History</p>
+      </div>
+
+      <div class="category-card">
+        <img src="images/Biograpgy C5.webp" alt="Biography">
+        <p>Biography</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- bestselling-books section -->
+  <section class="bestselling-books">
+    <h2 class="section-title">Current Bestselling Books</h2>
+
+    <div class="books-grid">
+
+      <!-- Book 1 -->
+      <div class="book-card">
+        <span class="discount-badge">-15%</span>
+        <button class="wishlist-btn">♡</button>
+        <img src="images/current 1.webp" alt="Yellowface" class="book-img" />
+        <h3 class="book-title">Yellowface</h3>
+        <p class="book-author">By R. F. Kuang</p>
+        <div class="book-rating">★★★★★</div>
+        <p class="book-price">$29.95</p>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="book-card">
+        <span class="discount-badge">-15%</span>
+        <button class="wishlist-btn">♡</button>
+        <img src="images/current 2.webp" alt="The Women" class="book-img" />
+        <h3 class="book-title">The Women</h3>
+        <p class="book-author">By Kristin Hannah</p>
+        <div class="book-rating">★★★★☆</div>
+        <p class="book-price">$29.95</p>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="book-card">
+        <span class="discount-badge">-15%</span>
+        <button class="wishlist-btn">♡</button>
+        <img src="images/current 3.webp" alt="So Thirsty" class="book-img" />
+        <h3 class="book-title">So Thirsty</h3>
+        <p class="book-author">By Rachel Harrison</p>
+        <div class="book-rating">★★★★☆</div>
+        <p class="book-price">$29.95</p>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="book-card">
+        <span class="discount-badge">-15%</span>
+        <button class="wishlist-btn">♡</button>
+        <img src="images/current 4.webp" alt="Playground" class="book-img" />
+        <h3 class="book-title">Playground</h3>
+        <p class="book-author">By Richard Powers</p>
+        <div class="book-rating">★★★★★</div>
+        <p class="book-price">$29.95</p>
+      </div>
+
+      <!-- Book 5 -->
+      <div class="book-card">
+        <span class="discount-badge">-15%</span>
+        <button class="wishlist-btn">♡</button>
+        <img src="images/current 5.webp" alt="The Saint of Bright Doors" class="book-img" />
+        <h3 class="book-title">The Saint of Bright Doors</h3>
+        <p class="book-author">By Vajra Chandrasekera</p>
+        <div class="book-rating">★★★★☆</div>
+        <p class="book-price">$29.95</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="thriller-banner">
+    <div class="thriller-text">
+      <p class="subheading">Best Collection.</p>
+      <h2 class="main-heading">Top Favourite<br>Thriller Stories</h2>
+      <p class="description">Find our take on the best books of all time.</p>
+      <a href="#" class="discover-btn">Discover Now <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Half price section -->
+  <section class="highlights-section">
+    <div class="highlight-header">
+      <h2>Half price books</h2>
+      <button class="browse-btn">Browse All</button>
+    </div>
+
+    <div class="book-container">
+
+      <!-- Book Card 1 -->
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/half 1.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">A Short History Of Nearly Everything</h3>
+        <p class="author">By Alison Smith</p>
+
+        <div class="rating">★★★★★ <span>(0)</span></div>
+        <div class="price">$299.95</div>
+      </div>
+
+      <!-- Copy & Replace for more books -->
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/half 2.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+
+      <!-- Add 4 more similar cards here -->
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/half 3.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/half 4.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/half 5.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+      <div class="book-card">
+        <div class="discount-badge">-15%</div>
+        <img src="images/half 6.webp" alt="Book">
+        <div class="heart">♡</div>
+
+        <h3 class="book-title">Complete Set Of 7 Books</h3>
+        <p class="author">By Cathy McIntosh</p>
+
+        <div class="rating">★★★★☆ <span>(0)</span></div>
+        <div class="price">$249.95</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop section -->
+  <section class="shop-section">
+    <div class="shop-card">
+      <img src="images/banner 1.webp" alt="Collect Shop" />
+      <div class="overlay">
+        <p class="tagline">Game. Anime. Life</p>
+        <h2>COLLECT SHOP</h2>
+        <button class="shop-btn">Shop Now <span>➜</span></button>
+      </div>
+    </div>
+
+    <div class="shop-card">
+      <img src="images/banner 2.webp" alt="The Truth Lies Here" />
+      <div class="overlay">
+        <p class="tagline">New this week.</p>
+        <h2>THE TRUTH LIES HERE</h2>
+        <button class="shop-btn">Shop Now <span>➜</span></button>
+      </div>
+    </div>
+
+    <div class="shop-card">
+      <img src="images/banner 3.webp" alt="Woman In The Water" />
+      <div class="overlay">
+        <p class="tagline">Fiction bestsellers.</p>
+        <h2>WOMAN IN THE WATER</h2>
+        <button class="shop-btn">Shop Now <span>➜</span></button>
+      </div>
+    </div>
+  </section>
+  <!-- picks for you -->
+
+  <section class="picks-for-you">
+    <h2 class="section-title">Picks for you</h2>
+
+    <div class="picks-layout">
+      <!-- Left: Featured Book -->
+      <div class="featured-card">
+        <div class="discount">-15%</div>
+        <div class="featured-content">
+          <img src="images/pfy 1.webp" alt="Entitlement Book Cover" class="featured-img" />
+
+          <div class="featured-info">
+            <h3>The Seven Husbands Of Evelyn Hugo</h3>
+            <p class="author">Ap Bokifa</p>
+            <p class="desc">
+              From the author of The Longest Ride and The Return comes a novel about the enduring
+              legacy of first love, and the decisions that haunt...
+            </p>
+            <p class="price">$29.95</p>
+            <button class="cart-btn">+ Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Six Small Books -->
+      <div class="six-grid-container">
+        <div class="small-card">
+          <img src="images/pfy 2.webp" alt="">
+          <div>
+            <h4>Harry Potter And The Sorcerer’s Stone</h4>
+            <p class="author">Ap Bokifa</p>
+            <p class="price">$269.95</p>
+          </div>
+        </div>
+        <div class="small-card">
+          <img src="images/pfy 3.webp" alt="">
+          <div>
+            <h4>Memoirs Of A Geisha</h4>
+            <p class="author">Ap Bokifa</p>
+            <p class="price">$289.95</p>
+          </div>
+        </div>
+        <div class="small-card">
+          <img src="images/pfy 1.webp" alt="">
+          <div>
+            <h4>Scattershot: Life, Music, Elton, And Me</h4>
+            <p class="author">Ap Bokifa</p>
+            <p class="price">$309.95</p>
+          </div>
+        </div>
+        <div class="small-card">
+          <img src="images/pfy 5.webp" alt="">
+          <div>
+            <h4>The Catcher In The Rye</h4>
+            <p class="author">Ap Bokifa</p>
+            <p class="price">$329.95</p>
+          </div>
+        </div>
+        <div class="small-card">
+          <img src="images/pfy 6.webp" alt="">
+          <div>
+            <h4>The City And Its Uncertain Walls: A Novel</h4>
+            <p class="author">Ap Bokifa</p>
+            <p class="price">$339.95</p>
+          </div>
+        </div>
+        <div class="small-card">
+          <img src="images/pfy 7.webp" alt="">
+          <div>
+            <h4>The House Of The Spirits</h4>
+            <p class="author">Ap Bokifa</p>
+            <p class="price">$29.95</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- features author section -->
+  <section class="featured-authors">
+    <h2 class="authors-title">Featured authors</h2>
+
+    <div class="authors-wrapper">
+      <button class="arrow left">&#10094;</button>
+
+      <div class="authors-list">
+        <div class="author">
+          <img src="images/FA 1.webp" alt="Camelia Doe" />
+          <p>Camelia Doe</p>
+        </div>
+        <div class="author">
+          <img src="images/FA 2.webp" alt="Melany Rodriguez" />
+          <p>Melany Rodriguez</p>
+        </div>
+        <div class="author">
+          <img src="images/FA 3.webp" alt="Johan Sanford" />
+          <p>Johan Sanford</p>
+        </div>
+        <div class="author">
+          <img src="images/FA 8.webp" alt="Joe Knight" />
+          <p>Joe<br /> Knight</p>
+        </div>
+        <div class="author">
+          <img src="images/FA 4.webp" alt="Summer Chandler" />
+          <p>Summer Chandler</p>
+        </div>
+        <div class="author">
+          <img src="images/FA 5.webp" alt="Dennis Daniels" />
+          <p>Dennis Daniels</p>
+        </div>
+        <div class="author">
+          <img src="images/FA 6.webp" alt="Aubrie Butler" />
+          <p>Aubrie Butler</p>
+        </div>
+        <div class="author">
+          <img src="images/FA 7.webp" alt="Matias Casey" />
+          <p>Matias Casey</p>
+        </div>
+      </div>
+
+      <button class="arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- What client says -->
+  <section class="client-section">
+    <h2>What client says</h2>
+
+    <div class="client-container">
+      <div class="rating-circle">
+        <div class="rating-score">4.8<span>/5</span></div>
+        <div class="rating-stars">★★★★★</div>
+        <p>12,598 Verified Reviews</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-header">
+            <span class="name">Joanne H.</span>
+            <span class="date">Dec 1, 2024</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <hr>
+          <h3>This is my favorite bookshop</h3>
+          <p>
+            Love that you give books to those in need. Great service and can find
+            great value here especially as I prefer hardcover books to add to my
+            collection.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="name">Viorel M.</span>
+            <span class="date">Dec 1, 2024</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <hr>
+          <h3>Quick and easy</h3>
+          <p>
+            Costs are low, there’s always promotions or discounts, the website is
+            easy to navigate, and knowing that the impact of purchasing makes me
+            feel like I’m doing something good.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="name">Ciaren R.</span>
+            <span class="date">Dec 1, 2024</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <hr>
+          <h3>Excellent service</h3>
+          <p>
+            The books were wrapped securely and arrived in pristine condition. I
+            sent an email after to ask about the author, and I received a prompt
+            reply.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="name">Margaret C.</span>
+            <span class="date">Dec 1, 2024</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <hr>
+          <h3>Best Bookshop ever!</h3>
+          <p>
+            I am so happy to find a site where I can shop for unusual items. The
+            packaging was phenomenal and the book arrived on time in perfect
+            condition.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fast delivery -->
+  <section class="features-section">
+    <div class="features-container">
+      <div class="feature-box">
+        <img src="images/box_1.png" alt="Delivery Icon">
+        <h3>FAST DELIVERY</h3>
+        <p>Free standard delivery</p>
+      </div>
+
+      <div class="feature-box">
+        <img src="images/gift-box_1.png" alt="Gift Icon">
+        <h3>BEST PRICES & OFFERS</h3>
+        <p>Multiple gift options available</p>
+      </div>
+
+      <div class="feature-box">
+        <img src="images/box_2.png" alt="Deal Icon">
+        <h3>GREAT DAILY DEAL</h3>
+        <p>Orders $50 or more</p>
+      </div>
+
+      <div class="feature-box">
+        <img src="images/box_3.png" alt="Collect Icon">
+        <h3>CLICK & COLLECT</h3>
+        <p>Check your local stores now</p>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <!-- News & Events -->
+  <section class="news-section">
+    <div class="news-header">
+      <h2>News &amp; events</h2>
+      <a href="#" class="browse-btn">Browse All →</a>
+    </div>
+
+    <div class="news-container">
+      <!-- Card 1 -->
+      <div class="news-card">
+        <div class="news-image">
+          <img src="images/NE 1.webp" alt="Author Victoria Aveyard">
+        </div>
+        <div class="news-meta">
+          <span class="category">IN <b>TIPS & TRICKS</b></span>
+          <span class="divider">/</span>
+          <span>OCT 24, 2024</span>
+          <span class="divider">/</span>
+          <span>BY HA EI</span>
+        </div>
+        <h3>Behind the Scenes with Author Victoria Aveyard</h3>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="news-card">
+        <div class="news-image">
+          <img src="images/NE 2.webp" alt="Bookstore WordPress Themes">
+        </div>
+        <div class="news-meta">
+          <span class="category">IN <b>TIPS & TRICKS</b></span>
+          <span class="divider">/</span>
+          <span>OCT 24, 2024</span>
+          <span class="divider">/</span>
+          <span>BY HA EI</span>
+        </div>
+        <h3>5 Attractive Bookstore WordPress Themes</h3>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="news-card">
+        <div class="news-image">
+          <img src="images/NE 3.webp" alt="Book List">
+        </div>
+        <div class="news-meta">
+          <span class="category">IN <b>TIPS & TRICKS</b></span>
+          <span class="divider">/</span>
+          <span>OCT 24, 2024</span>
+          <span class="divider">/</span>
+          <span>BY HA EI</span>
+        </div>
+        <h3>Top 10 Books to Make It a Great Year</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stay in the know -->
+  <footer class="footer">
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+
+        <h2>Stay in the know</h2>
+
+        <p>
+          Subscribe to our newsletter and stay updated on latest offers,
+          discounts and events near you.
+        </p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email id" />
+          <button>Subscribe</button>
+        </div>
+        <div class="newsletter-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="newsletter-right">
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Footer -->
+    <div class="footer-main">
+      <div class="footer-column footer-about">
+        <div class="footer-logo">
+          <img src="images/logo.png.png" alt="logo" />
+
+        </div>
+        <p class="contact-description">
+          Bokifa draws book lovers of all ages into a community, engage with
+          booklovers and meet their favourite literary personalities.
+        </p>
+
+        <p class="contact-phone">+(84) - 1800 - 4635</p>
+        <p class="contact-email">contact@example.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Category</h4>
+        <ul>
+          <li>Action Books</li>
+          <li>Comedy</li>
+          <li>Drama</li>
+          <li>Horror</li>
+          <li>Kids Books</li>
+          <li>Top 50 Books</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Useful links</h4>
+        <ul>
+          <li>Secure Shopping</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Shipping Policy</li>
+          <li>Returns Policy</li>
+          <li>Payment Option</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li>About us</li>
+          <li>Store Locator</li>
+          <li>Kids Club</li>
+          <li>Blogs</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Get in touch</h4>
+        <ul>
+          <li>Careers</li>
+          <li>Become a Franchisee</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('active');
+}
+
+function toggleDropdown(id) {
+  const menu = document.getElementById(id);
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

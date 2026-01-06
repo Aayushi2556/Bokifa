@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bokifa</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1B6vHn6i6W8q8Yp+FZl5WgCB9W5p+X5p7UbnFbD8yM4Y1TtGJf5xH0hZ8t6l5WvZlw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+</head>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: #fff;
+    }
+
+    .team-header {
+        background: #222; /* dark background like SS */
+        padding: 100px 20px;
+        text-align: center;
+        color: white;
+        border-bottom: 1px solid #fff;
+    }
+
+    .team-header h1 {
+        font-size: 55px;
+        font-weight: 700;
+        margin: 0 0 15px 0;
+    }
+
+    .breadcrumb {
+        font-size: 16px;
+        color: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .breadcrumb img {
+        width: 18px; /* Home icon size */
+        filter: brightness(0) invert(1); /* make icon white */
+    }
+
+    .breadcrumb span {
+        color: white;
+    }
+
+    /* creative team */
+   /* Section text */
+.team-section {
+  text-align: center;
+  padding: 40px 0;
+  font-family: "Georgia", serif;
+}
+
+.top-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.main-heading {
+  font-size: 38px;
+  margin: 0;
+}
+
+.sub-heading {
+  font-size: 26px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Grid container */
+.team-container {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+}
+
+/* Square image box */
+.team-item {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* makes it a perfect square */
+  overflow: hidden;
+}
+
+.team-item img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;     /* keeps face centered */
+  display: block;
+  border-radius: 4px;
+}
+
+/* ----------------------------- */
+/*         RESPONSIVE CSS        */
+/* ----------------------------- */
+
+/* Header */
+@media (max-width: 992px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .search-box {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-box input {
+    width: 70%;
+  }
+
+  .right-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dropdowns select {
+    width: 120px;
+  }
+}
+
+/* Navigation */
+@media (max-width: 900px) {
+  .nav-bar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-bar p {
+    display: none; /* hide contact number on mobile */
+  }
+
+  .nav-bar a {
+    font-size: 15px;
+  }
+}
+
+/* Team Header */
+@media (max-width: 768px) {
+  .team-header {
+    padding: 60px 15px;
+  }
+
+  .team-header h1 {
+    font-size: 38px;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+  }
+}
+
+/* Creative Team Section */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 28px;
+  }
+
+  .sub-heading {
+    font-size: 20px;
+  }
+
+  .team-container {
+    width: 95%;
+    gap: 25px;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+  .team-header h1 {
+    font-size: 32px;
+  }
+
+  .team-item {
+    aspect-ratio: 1/1;
+  }
+
+  .newsletter-container p {
+    padding: 0 10px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
+/* Footer */
+@media (max-width: 900px) {
+  .footer-main {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-column img {
+    margin: 0 auto;
+  }
+
+  .footer-column ul li {
+    text-align: center;
+  }
+}
+
+</style>
+
+</head>
+<body>
+<!-- Top Bar -->
+  <div class="top-bar">
+    <p>&lt; All books at least 50% off list prices every day &gt;</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo.png.png" alt="bokifa logo">
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search our store...">
+        <button><i class="fas fa-search"></i> Search</button>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="dropdowns">
+          <select>
+            <option>USD $</option>
+            <option>EUR €</option>
+            <option>INR ₹</option>
+          </select>
+          <select>
+            <option>ENGLISH</option>
+            <option>HINDI</option>
+            <option>FRENCH</option>
+          </select>
+        </div>
+
+        <div class="icons">
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+          <a href="#"><i class="fa-regular fa-heart"></i><span class="badge">0</span></a>
+          <a href="#"><i class="fas fa-bag-shopping"></i><span class="badge">0</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <ul>
+      <ul class="menuArea">
+<li class="dropdown">
+    <a href="#">Home ⌵</a>
+    <ul class="dropdown-menu">
+        <li><a href="index.html">Home Default</a></li>
+        <li><a href="index.html">Home V1</a></li>
+        <li><a href="index.html">Home V2</a></li>
+        <li><a href="index.html">Home V3</a></li>
+        <li><a href="index.html">Home V4</a></li>
+        <li><a href="index.html">Home V5</a></li>
+    </ul>
+</li>
+
+</ul>
+
+     <li class="shop-menu">
+    <a href="#">Shop ⌵</a>
+
+    <div class="shop-dropdown full-width">
+        <div class="dropdown-inner">
+
+            <!-- LEFT 3 COLUMNS -->
+            <div class="dropdown-left">
+
+                <div class="dropdown-col">
+                    <h4>SHOP LAYOUTS</h4>
+                    <a href="#">Left Sidebar</a>
+                    <a href="#">Collection Top</a>
+                    <a href="#">List Collection</a>
+                    <a href="#">Coupon</a>
+                </div>
+
+                <div class="dropdown-col">
+                    <h4>PRODUCT LAYOUTS</h4>
+                    <a href="#">Classic</a>
+                    <a href="#">Scroll Fixed</a>
+                    <a href="#">Left Thumbnail</a>
+                    <a href="#">Right Thumbnail</a>
+                    <a href="#">Without Thumbnail</a>
+                </div>
+
+                <div class="dropdown-col">
+                    <h4>PRODUCT TYPES</h4>
+                    <a href="#">With Video</a>
+                    <a href="#">Upssell</a>
+                    <a href="#">Crosssell</a>
+                    <a href="#">Soldout – In Coming</a>
+                    <a href="#">Product Countdown</a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT BANNER -->
+          <div class="banner-wrapper">
+    <img src="images/banner 3.webp" class="banner-img">
+
+    <div class="banner-text">
+        <p class="small-text sale-color">Five day sale!</p>
+
+        <h2 class="big-text">Save 50%</h2>
+        <p class="sub-text">Use code BIGSALE50 at checkout</p>
+        <button class="shop-btn">Shop Now</button>
+    </div>
+</div>
+
+</div>
+
+
+        </div>
+    </div>
+</li>
+
+      <li class="dropdown">
+    <a href="#"> Blogs ⌵</a>
+
+
+    <ul class="dropdown-menu">
+        <li><a href="#">Blog - Standard</a></li>
+        <li><a href="#">Blog - Grid</a></li>
+        <li><a href="#">Single Post</a></li>
+    </ul>
+</li>
+
+      <li class="dropdown">
+    <a href="#">Pages ⌵</a>
+    
+    <ul class="dropdown-menu">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="our.html">Our Team</a></li>
+        <li><a href="faqs.html">Faqs</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="error.html"> Error</a></li>
+
+    </ul>
+</li>
+            <a href="contact.html">Contact</a>
+    </ul>
+    <p>Need help? Call Us: <strong>+84 2500 888 33</strong></p>
+  </nav>
+  
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('homeMenu')">
+    Home <span>⌵</span>
+  </div>
+  <div id="homeMenu" class="mobile-submenu">
+    <a href="#">Home Default</a>
+    <a href="#">Home V1</a>
+    <a href="#">Home V2</a>
+    <a href="#">Home V3</a>
+    <a href="#">Home V4</a>
+    <a href="#">Home V5</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('shopMenu')">
+    Shop <span>⌵</span>
+  </div>
+  <div id="shopMenu" class="mobile-submenu">
+    <a href="#">Shop Layouts</a>
+    <a href="#">Product Layouts</a>
+    <a href="#">Product Types</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('blogMenu')">
+    Blogs <span>⌵</span>
+  </div>
+  <div id="blogMenu" class="mobile-submenu">
+    <a href="#">Blog - Standard</a>
+    <a href="#">Blog - Grid</a>
+    <a href="#">Single Post</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('pagesMenu')">
+    Pages <span>⌵</span>
+  </div>
+  <div id="pagesMenu" class="mobile-submenu">
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="our.html">Our Team</a>
+    <a href="faqs.html">Faqs</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="error.html">Error</a>
+  </div>
+
+  <a href="contact.html">Contact</a>
+</div>
+
+  <!-- meet our team -->
+<section class="team-header">
+    <h1>Meet Our Team</h1>
+
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i> Home / Meet Our Team
+            </div>
+    </div>
+</section>
+
+<!-- creative Team -->
+ <section class="team-section">
+  <p class="top-text">Creative team</p>
+  <h2 class="main-heading">We are a professional</h2>
+  <h3 class="sub-heading">creative team</h3>
+
+  <div class="team-container">
+    <div class="team-item"><img src="images/team 1.webp" alt=""></div>
+    <div class="team-item"><img src="images/team 2.webp" alt=""></div>
+    <div class="team-item"><img src="images/team 3.jpg" alt=""></div>
+    <div class="team-item"><img src="images/team 4.webp" alt=""></div>
+    <div class="team-item"><img src="images/team 5.webp" alt=""></div>
+    <div class="team-item"><img src="images/team 6.webp" alt=""></div>
+    <div class="team-item"><img src="images/team 7.webp" alt=""></div>
+  </div>
+</section>
+
+<!-- Stay in the know -->
+  <footer class="footer">
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+
+        <h2>Stay in the know</h2>
+
+        <p>
+          Subscribe to our newsletter and stay updated on latest offers,
+          discounts and events near you.
+        </p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email id" />
+          <button>Subscribe</button>
+        </div>
+        <div class="newsletter-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="newsletter-right">
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Footer -->
+    <div class="footer-main">
+      <div class="footer-column footer-about">
+        <div class="footer-logo">
+          <img src="images/logo.png.png" alt="logo" />
+
+        </div>
+        <p class="contact-description">
+          Bokifa draws book lovers of all ages into a community, engage with
+          booklovers and meet their favourite literary personalities.
+        </p>
+
+        <p class="contact-phone">+(84) - 1800 - 4635</p>
+        <p class="contact-email">contact@example.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Category</h4>
+        <ul>
+          <li>Action Books</li>
+          <li>Comedy</li>
+          <li>Drama</li>
+          <li>Horror</li>
+          <li>Kids Books</li>
+          <li>Top 50 Books</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Useful links</h4>
+        <ul>
+          <li>Secure Shopping</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Shipping Policy</li>
+          <li>Returns Policy</li>
+          <li>Payment Option</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li>About us</li>
+          <li>Store Locator</li>
+          <li>Kids Club</li>
+          <li>Blogs</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Get in touch</h4>
+        <ul>
+          <li>Careers</li>
+          <li>Become a Franchisee</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('active');
+}
+
+function toggleDropdown(id) {
+  const menu = document.getElementById(id);
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+</script>
+</body>
+</html>

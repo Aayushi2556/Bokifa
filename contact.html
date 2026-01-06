@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bokifa</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1B6vHn6i6W8q8Yp+FZl5WgCB9W5p+X5p7UbnFbD8yM4Y1TtGJf5xH0hZ8t6l5WvZlw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+</head>
+
+    <style>
+        /* map */
+        .map-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.google-map {
+    width: 100%;
+    height: 450px;   /* Change height if needed */
+    border: 0;
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+        }
+
+        .office-section {
+            width: 100%;
+            text-align: center;
+            padding: 70px 0;
+        }
+
+        .office-section h2 {
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .office-section .sub-text {
+            font-size: 16px;
+            color: #666;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.6;
+            margin-bottom: 60px;
+        }
+
+        .office-row {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            flex-wrap: wrap;
+        }
+
+        .office-box {
+            text-align: center;
+            width: 230px;
+        }
+
+        .office-box img {
+            width: 70px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .office-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .office-box p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .office-box .phone {
+            margin-top: 10px;
+            color: #0abf9e;
+            font-weight: 500;
+        }
+
+        /* get in touch */
+        .contact-section {
+    width: 100%;
+    padding: 80px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    font-family: "Inter", sans-serif;
+}
+
+/* LEFT SIDE */
+.contact-left {
+    width: 50%;
+}
+
+.contact-left h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.contact-left p {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* INFO ITEMS */
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.icon-circle {
+    width: 65px;
+    height: 65px;
+    background: #10d7a3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle img {
+    width: 28px;
+}
+
+.info-box h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info-box p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* RIGHT SIDE FORM */
+.contact-right {
+    width: 50%;
+}
+
+.form-card {
+    background: #fff;
+    padding: 85px;
+    border-radius: 14px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.06);
+    width: 600px;
+}
+
+.form-card h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.form-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-card input,
+.form-card textarea {
+    width: 100%;
+    padding: 15px 17px;
+    border: 1.4px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    font-family: inherit;
+}
+
+.full-input {
+    margin-top: 20px;
+}
+
+.form-card textarea {
+    margin-top: 20px;
+    height: 160px;
+    resize: none;
+}
+
+.send-btn {
+    margin-top: 25px;
+    padding: 14px 35px;
+    background: #fff;
+    border: 1.8px solid #ddd;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right;
+}
+
+/* RESPONSIVE */
+@media(max-width: 991px) {
+    .contact-section {
+        flex-direction: column;
+    }
+    .contact-left, .contact-right {
+        width: 100%;
+    }
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Medium screens (tablet) */
+@media (max-width: 991px) {
+    /* Contact section stacks vertically */
+    .contact-section {
+        flex-direction: column;
+        padding: 60px 5%;
+        gap: 40px;
+    }
+    .contact-left, .contact-right {
+        width: 100%;
+    }
+    .form-card {
+        width: 100%;
+        padding: 50px 25px;
+    }
+
+    /* Office section */
+    .office-row {
+        gap: 30px;
+        justify-content: space-around;
+    }
+    .office-box {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .office-section h2 {
+        font-size: 32px;
+    }
+    .office-section .sub-text {
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .office-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .office-box {
+        width: 80%;
+    }
+
+    .contact-left h1 {
+        font-size: 36px;
+    }
+    .contact-left p {
+        font-size: 15px;
+    }
+
+    .form-card {
+        padding: 35px 20px;
+    }
+    .form-card h2 {
+        font-size: 28px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+    .office-section h2 {
+        font-size: 28px;
+    }
+    .office-section .sub-text {
+        font-size: 13px;
+        margin-bottom: 40px;
+    }
+
+    .office-box img {
+        width: 55px;
+    }
+    .office-box h3 {
+        font-size: 18px;
+    }
+    .office-box p, .office-box .phone {
+        font-size: 12px;
+    }
+
+    .contact-left h1 {
+        font-size: 28px;
+    }
+    .contact-left p {
+        font-size: 14px;
+    }
+
+    .form-card {
+        padding: 25px 15px;
+    }
+    .form-card h2 {
+        font-size: 24px;
+    }
+    .form-card input, .form-card textarea {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    .send-btn {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .google-map {
+        height: 300px;
+    }
+}
+
+    </style>
+</head>
+<body>
+<!-- Top Bar -->
+  <div class="top-bar">
+    <p>&lt; All books at least 50% off list prices every day &gt;</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo.png.png" alt="bokifa logo">
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search our store...">
+        <button><i class="fas fa-search"></i> Search</button>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="dropdowns">
+          <select>
+            <option>USD $</option>
+            <option>EUR €</option>
+            <option>INR ₹</option>
+          </select>
+          <select>
+            <option>ENGLISH</option>
+            <option>HINDI</option>
+            <option>FRENCH</option>
+          </select>
+        </div>
+
+        <div class="icons">
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+          <a href="#"><i class="fa-regular fa-heart"></i><span class="badge">0</span></a>
+          <a href="#"><i class="fas fa-bag-shopping"></i><span class="badge">0</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <ul>
+      <ul class="menuArea">
+<li class="dropdown">
+    <a href="#">Home ⌵</a>
+    <ul class="dropdown-menu">
+        <li><a href="index.html">Home Default</a></li>
+        <li><a href="index.html">Home V1</a></li>
+        <li><a href="index.html">Home V2</a></li>
+        <li><a href="index.html">Home V3</a></li>
+        <li><a href="index.html">Home V4</a></li>
+        <li><a href="index.html">Home V5</a></li>
+    </ul>
+</li>
+
+</ul>
+
+     <li class="shop-menu">
+    <a href="#">Shop ⌵</a>
+
+    <div class="shop-dropdown full-width">
+        <div class="dropdown-inner">
+
+            <!-- LEFT 3 COLUMNS -->
+            <div class="dropdown-left">
+
+                <div class="dropdown-col">
+                    <h4>SHOP LAYOUTS</h4>
+                    <a href="#">Left Sidebar</a>
+                    <a href="#">Collection Top</a>
+                    <a href="#">List Collection</a>
+                    <a href="#">Coupon</a>
+                </div>
+
+                <div class="dropdown-col">
+                    <h4>PRODUCT LAYOUTS</h4>
+                    <a href="#">Classic</a>
+                    <a href="#">Scroll Fixed</a>
+                    <a href="#">Left Thumbnail</a>
+                    <a href="#">Right Thumbnail</a>
+                    <a href="#">Without Thumbnail</a>
+                </div>
+
+                <div class="dropdown-col">
+                    <h4>PRODUCT TYPES</h4>
+                    <a href="#">With Video</a>
+                    <a href="#">Upssell</a>
+                    <a href="#">Crosssell</a>
+                    <a href="#">Soldout – In Coming</a>
+                    <a href="#">Product Countdown</a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT BANNER -->
+          <div class="banner-wrapper">
+    <img src="images/banner 3.webp" class="banner-img">
+
+    <div class="banner-text">
+        <p class="small-text sale-color">Five day sale!</p>
+
+        <h2 class="big-text">Save 50%</h2>
+        <p class="sub-text">Use code BIGSALE50 at checkout</p>
+        <button class="shop-btn">Shop Now</button>
+    </div>
+</div>
+
+</div>
+
+
+        </div>
+    </div>
+</li>
+
+      <li class="dropdown">
+    <a href="#"> Blogs ⌵</a>
+
+
+    <ul class="dropdown-menu">
+        <li><a href="#">Blog - Standard</a></li>
+        <li><a href="#">Blog - Grid</a></li>
+        <li><a href="#">Single Post</a></li>
+    </ul>
+</li>
+
+      <li class="dropdown">
+    <a href="#">Pages ⌵</a>
+    
+    <ul class="dropdown-menu">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="our.html">Our Team</a></li>
+        <li><a href="faqs.html">Faqs</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="error.html"> Error</a></li>
+
+    </ul>
+</li>
+            <a href="contact.html">Contact</a>
+    </ul>
+    <p>Need help? Call Us: <strong>+84 2500 888 33</strong></p>
+  </nav>
+  
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('homeMenu')">
+    Home <span>⌵</span>
+  </div>
+  <div id="homeMenu" class="mobile-submenu">
+    <a href="#">Home Default</a>
+    <a href="#">Home V1</a>
+    <a href="#">Home V2</a>
+    <a href="#">Home V3</a>
+    <a href="#">Home V4</a>
+    <a href="#">Home V5</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('shopMenu')">
+    Shop <span>⌵</span>
+  </div>
+  <div id="shopMenu" class="mobile-submenu">
+    <a href="#">Shop Layouts</a>
+    <a href="#">Product Layouts</a>
+    <a href="#">Product Types</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('blogMenu')">
+    Blogs <span>⌵</span>
+  </div>
+  <div id="blogMenu" class="mobile-submenu">
+    <a href="#">Blog - Standard</a>
+    <a href="#">Blog - Grid</a>
+    <a href="#">Single Post</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('pagesMenu')">
+    Pages <span>⌵</span>
+  </div>
+  <div id="pagesMenu" class="mobile-submenu">
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="our.html">Our Team</a>
+    <a href="faqs.html">Faqs</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="error.html">Error</a>
+  </div>
+
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- map -->
+ <section class="map-section">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.85448051955!2d-73.990348!3d40.753913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ae0908e127%3A0x52b8d90b518d4a14!2sBroadway%2C%20New%20York!5e0!3m2!1sen!2sus!4v1700000000000" 
+        allowfullscreen="" 
+        loading="lazy"
+        class="google-map">
+    </iframe>
+</section>
+
+<section class="office-section">
+
+    <h2>Our worldwide office</h2>
+
+    <p class="sub-text">
+        Worldwide logistics group now has 38 offices in 20 countries.
+        “We’ve always had a strong worldwide network, but it’s our client-driven intention.
+    </p>
+
+    <div class="office-row">
+
+        <!-- Europe Office -->
+        <div class="office-box">
+            <img src="images/europe office.png" alt="icon">
+            <h3>Europe Office</h3>
+            <p>751 Echo Park Ave., Los Angeles,<br> CA 90026</p>
+            <p class="phone">(213) 250-3578</p>
+        </div>
+
+        <!-- Asia Office -->
+        <div class="office-box">
+            <img src="images/asia office.png" alt="icon">
+            <h3>Asia Office</h3>
+            <p>1116 Wilshire Blvd, Santa Monica,<br> Los Angeles, CA 90401</p>
+            <p class="phone">(310) 394-1406</p>
+        </div>
+
+        <!-- West Hollywood -->
+        <div class="office-box">
+            <img src="images/west hollywood.png" alt="icon">
+            <h3>West Hollywood</h3>
+            <p>6250 Hollywood Blvd, Hollywood,<br> Los Angeles, CA 90028</p>
+            <p class="phone">(323) 728-1300</p>
+        </div>
+
+        <!-- Silver Lake -->
+        <div class="office-box">
+            <img src="images/silver lake.png" alt="icon">
+            <h3>Silver Lake</h3>
+            <p>2246 Silver Lake Blvd Los Angeles,<br> CA 90026</p>
+            <p class="phone">(354) 569-1536</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- get in touch  -->
+ <section class="contact-section">
+
+    <div class="contact-left">
+        <h1>Get in touch and we’ll help your business</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elitul am aliqu am, velit rutrum
+            dictum lobortis, turpis justo auc tor quam, a auctor lorem odio in nunc.
+        </p>
+
+        <!-- Contact Us -->
+        <div class="info-box">
+            <div class="icon-circle">
+                <img src="icon-email.png" alt="">
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p>Call us: + (406) 555-0120</p>
+                <p>Email: support@example.com</p>
+            </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="info-box">
+            <div class="icon-circle">
+                <img src="icon-clock.png" alt="">
+            </div>
+            <div>
+                <h3>Opening Hours</h3>
+                <p>Mon - Sat: 7.00 am - 8.00 pm</p>
+                <p>Sunday: 8.00 am - 6.00 pm</p>
+            </div>
+        </div>
+
+        <!-- Our Office -->
+        <div class="info-box">
+            <div class="icon-circle">
+                <img src="icon-pin.png" alt="">
+            </div>
+            <div>
+                <h3>Our Office</h3>
+                <p>2972 Westheimer Rd. Santa Ana,<br>Illinois, USA</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-right">
+        <div class="form-card">
+            <h2>Need Help?</h2>
+            <p>
+                Lorem ipsum dolor sit amet, cons ectetur adipiscing elitull am aliqu am, velit rutrum dictum
+                lobortis,
+            </p>
+
+            <div class="row">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+            </div>
+
+            <input type="text" class="full-input" placeholder="Phone number">
+
+            <textarea placeholder="Let us know what you need."></textarea>
+
+            <button class="send-btn">Send Message</button>
+        </div>
+    </div>
+
+</section>
+
+<!-- Stay in the know -->
+  <footer class="footer">
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+
+        <h2>Stay in the know</h2>
+
+        <p>
+          Subscribe to our newsletter and stay updated on latest offers,
+          discounts and events near you.
+        </p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email id" />
+          <button>Subscribe</button>
+        </div>
+        <div class="newsletter-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="newsletter-right">
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Footer -->
+    <div class="footer-main">
+      <div class="footer-column footer-about">
+        <div class="footer-logo">
+          <img src="images/logo.png.png" alt="logo" />
+
+        </div>
+        <p class="contact-description">
+          Bokifa draws book lovers of all ages into a community, engage with
+          booklovers and meet their favourite literary personalities.
+        </p>
+
+        <p class="contact-phone">+(84) - 1800 - 4635</p>
+        <p class="contact-email">contact@example.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Category</h4>
+        <ul>
+          <li>Action Books</li>
+          <li>Comedy</li>
+          <li>Drama</li>
+          <li>Horror</li>
+          <li>Kids Books</li>
+          <li>Top 50 Books</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Useful links</h4>
+        <ul>
+          <li>Secure Shopping</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Shipping Policy</li>
+          <li>Returns Policy</li>
+          <li>Payment Option</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li>About us</li>
+          <li>Store Locator</li>
+          <li>Kids Club</li>
+          <li>Blogs</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Get in touch</h4>
+        <ul>
+          <li>Careers</li>
+          <li>Become a Franchisee</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('active');
+}
+
+function toggleDropdown(id) {
+  const menu = document.getElementById(id);
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+</script>
+</body>
+</html>

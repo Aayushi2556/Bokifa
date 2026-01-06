@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look Book</title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1B6vHn6i6W8q8Yp+FZl5WgCB9W5p+X5p7UbnFbD8yM4Y1TtGJf5xH0hZ8t6l5WvZlw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Default system font */
+        }
+
+        /* Banner Section */
+        .lookbook-banner {
+            width: 100%;
+            height: 370px;
+            background: url("images/faq-bg.png") no-repeat center/cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lookbook-banner::after {
+            content: "";
+            position: absolute;
+            inset: 1;
+            background: rgba(0, 0, 0, 0.45); /* Dark overlay */
+        }
+
+        .lookbook-content {
+            position: relative;
+            color: #fff;
+            text-align: center;
+        }
+
+        .lookbook-content h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .lookbook-content p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .lookbook-content .home-icon {
+            font-size: 16px;
+            margin-right: 6px;
+        }
+
+        /* best sevices */
+        .services {
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.top-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.service-box {
+    width: 45%;
+}
+
+.service-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.service-box h3 {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.service-box .desc {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.learn-btn {
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+}
+/* bs2 */
+.product-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* LEFT BIG IMAGE */
+.left-image img {
+    width: 900px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    width: 330px;
+    position: relative;
+    text-align: center;
+}
+
+.product-img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bs-badge1 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #e82121;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    z-index: 2;
+}
+
+
+/* HEART ICON */
+.heart {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 22px;
+    cursor: pointer;
+    background: #fff;
+    padding: 7px 10px;
+    border-radius: 50%;
+}
+
+/* TITLE */
+.product-title {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* BRAND */
+.brand {
+    font-size: 13px;
+    color: gray;
+    margin: 6px 0;
+}
+
+/* RATING */
+.rating {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.rating span {
+    font-size: 14px;
+}
+
+/* PRICE */
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
+    margin-top: 8px;
+}
+
+/* DOTS SLIDER */
+.dots {
+    margin-top: 15px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.dot.active {
+    background: black;
+}
+/* -------------------------
+   STORE SECTION
+-------------------------- */
+.store-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.top-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.main-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Product Card */
+.product-card {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.welcome-badge1 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #e82121;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    z-index: 2;
+}
+
+
+/* Wishlist Icon */
+.wishlist {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.wishlist:hover {
+    color: #e82121;
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Rating */
+.rating {
+    font-size: 14px;
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+.rating span {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Title */
+.product-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+/* Author */
+.author {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+/* Price */
+.price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* -------------------------
+   INSTAGRAM FOLLOW SECTION
+-------------------------- */
+.insta-follow-section {
+    padding: 60px 20px;
+}
+
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.insta-follow-box {
+    background: #f7f7f7;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.follow-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.insta-icon {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.insta-id {
+    font-size: 15px;
+    color: #777;
+}
+
+/* Instagram Images */
+.insta-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .insta-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .insta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ARROWS */
+.nav-arrows {
+    margin-top: 25px;
+}
+
+.arrow {
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.2s;
+}
+
+.arrow:hover {
+    background: #54b684;
+    color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 1024px) {
+    .service-box {
+        width: 48%;
+    }
+    .product-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-image img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .search-box {
+        margin: 15px 0;
+        width: 100%;
+    }
+    .service-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .lookbook-content h1 {
+        font-size: 2rem;
+    }
+    .lookbook-banner {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lookbook-banner {
+        height: 200px;
+    }
+    .lookbook-content h1 {
+        font-size: 1.5rem;
+    }
+    .service-box h3 {
+        font-size: 1.5rem;
+    }
+    .product-card {
+        width: 90%;
+    }
+    .footer {
+        text-align: center;
+    }
+}
+    </style>
+</head>
+
+<body>
+<!-- Top Bar -->
+  <div class="top-bar">
+    <p>&lt; All books at least 50% off list prices every day &gt;</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo.png.png" alt="bokifa logo">
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search our store...">
+        <button><i class="fas fa-search"></i> Search</button>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="dropdowns">
+          <select>
+            <option>USD $</option>
+            <option>EUR €</option>
+            <option>INR ₹</option>
+          </select>
+          <select>
+            <option>ENGLISH</option>
+            <option>HINDI</option>
+            <option>FRENCH</option>
+          </select>
+        </div>
+
+        <div class="icons">
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+          <a href="#"><i class="fa-regular fa-heart"></i><span class="badge">0</span></a>
+          <a href="#"><i class="fas fa-bag-shopping"></i><span class="badge">0</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <ul>
+      <ul class="menuArea">
+<li class="dropdown">
+    <a href="#">Home ⌵</a>
+    <ul class="dropdown-menu">
+        <li><a href="index.html">Home Default</a></li>
+        <li><a href="index.html">Home V1</a></li>
+        <li><a href="index.html">Home V2</a></li>
+        <li><a href="index.html">Home V3</a></li>
+        <li><a href="index.html">Home V4</a></li>
+        <li><a href="index.html">Home V5</a></li>
+    </ul>
+</li>
+
+</ul>
+
+     <li class="shop-menu">
+    <a href="#">Shop ⌵</a>
+
+    <div class="shop-dropdown full-width">
+        <div class="dropdown-inner">
+
+            <!-- LEFT 3 COLUMNS -->
+            <div class="dropdown-left">
+
+                <div class="dropdown-col">
+                    <h4>SHOP LAYOUTS</h4>
+                    <a href="#">Left Sidebar</a>
+                    <a href="#">Collection Top</a>
+                    <a href="#">List Collection</a>
+                    <a href="#">Coupon</a>
+                </div>
+
+                <div class="dropdown-col">
+                    <h4>PRODUCT LAYOUTS</h4>
+                    <a href="#">Classic</a>
+                    <a href="#">Scroll Fixed</a>
+                    <a href="#">Left Thumbnail</a>
+                    <a href="#">Right Thumbnail</a>
+                    <a href="#">Without Thumbnail</a>
+                </div>
+
+                <div class="dropdown-col">
+                    <h4>PRODUCT TYPES</h4>
+                    <a href="#">With Video</a>
+                    <a href="#">Upssell</a>
+                    <a href="#">Crosssell</a>
+                    <a href="#">Soldout – In Coming</a>
+                    <a href="#">Product Countdown</a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT BANNER -->
+          <div class="banner-wrapper">
+    <img src="images/banner 3.webp" class="banner-img">
+
+    <div class="banner-text">
+        <p class="small-text sale-color">Five day sale!</p>
+
+        <h2 class="big-text">Save 50%</h2>
+        <p class="sub-text">Use code BIGSALE50 at checkout</p>
+        <button class="shop-btn">Shop Now</button>
+    </div>
+</div>
+
+</div>
+
+
+        </div>
+    </div>
+</li>
+
+      <li class="dropdown">
+    <a href="#"> Blogs ⌵</a>
+
+
+    <ul class="dropdown-menu">
+        <li><a href="#">Blog - Standard</a></li>
+        <li><a href="#">Blog - Grid</a></li>
+        <li><a href="#">Single Post</a></li>
+    </ul>
+</li>
+
+      <li class="dropdown">
+    <a href="#">Pages ⌵</a>
+    
+    <ul class="dropdown-menu">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="our.html">Our Team</a></li>
+        <li><a href="faqs.html">Faqs</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="error.html"> Error</a></li>
+
+    </ul>
+</li>
+            <a href="contact.html">Contact</a>
+    </ul>
+    <p>Need help? Call Us: <strong>+84 2500 888 33</strong></p>
+  </nav>
+  
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('homeMenu')">
+    Home <span>⌵</span>
+  </div>
+  <div id="homeMenu" class="mobile-submenu">
+    <a href="#">Home Default</a>
+    <a href="#">Home V1</a>
+    <a href="#">Home V2</a>
+    <a href="#">Home V3</a>
+    <a href="#">Home V4</a>
+    <a href="#">Home V5</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('shopMenu')">
+    Shop <span>⌵</span>
+  </div>
+  <div id="shopMenu" class="mobile-submenu">
+    <a href="#">Shop Layouts</a>
+    <a href="#">Product Layouts</a>
+    <a href="#">Product Types</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('blogMenu')">
+    Blogs <span>⌵</span>
+  </div>
+  <div id="blogMenu" class="mobile-submenu">
+    <a href="#">Blog - Standard</a>
+    <a href="#">Blog - Grid</a>
+    <a href="#">Single Post</a>
+  </div>
+
+  <div class="mobile-dropdown-btn" onclick="toggleDropdown('pagesMenu')">
+    Pages <span>⌵</span>
+  </div>
+  <div id="pagesMenu" class="mobile-submenu">
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="our.html">Our Team</a>
+    <a href="faqs.html">Faqs</a>
+    <a href="lookbook.html">Lookbook</a>
+    <a href="error.html">Error</a>
+  </div>
+
+  <a href="contact.html">Contact</a>
+</div>
+
+    <!-- Look Book Banner Section -->
+    <section class="lookbook-banner">
+        <div class="lookbook-content">
+            <h1>Look Book</h1>
+             <i class="fa fa-home"></i> Home / Lookbook
+        </div>
+    </section>
+
+    <!-- best services -->
+     <section class="services">
+    <p class="top-text">Best Services</p>
+    <h2 class="main-title">We provide safe & reliable cargo solutions</h2>
+
+    <div class="service-container">
+
+        <!-- LEFT SERVICE -->
+        <div class="service-box">
+            <img src="images/bs 1.webp" alt="">
+            <h3>Sea Transport Services</h3>
+            <p class="desc">
+                When customers need, especially customers wishing to hire "door to door"...
+            </p>
+            <a href="#" class="learn-btn">Learn More</a>
+        </div>
+
+        <!-- RIGHT SERVICE -->
+        <div class="service-box">
+            <img src="images/bs 2.webp" alt="">
+            <h3>Warehousing Services</h3>
+            <p class="desc">
+                We offer complete warehouse services to take care of all your needs.
+            </p>
+            <a href="#" class="learn-btn">Learn More</a>
+        </div>
+
+    </div>
+</section>
+<!-- bs2 -->
+ <section class="product-section">
+
+    <!-- LEFT BIG IMAGE -->
+    <div class="left-image">
+        <img src="images/bs 3.webp" alt="">
+    </div>
+
+    <!-- RIGHT PRODUCT CARD -->
+    <div class="product-card">
+        <div class="bs-badge1">-15%</div>
+        <div class="heart">♡</div>
+
+        <img src="images/bs 4.webp" alt="" class="product-img">
+
+        <h3 class="product-title">Extremely Loud And Incredibly Close</h3>
+        <p class="brand">By Bokifa</p>
+
+        <div class="rating">
+            ★★★★★
+            <span>(1)</span>
+        </div>
+
+        <p class="price">$259.95</p>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+</section>
+
+<!-- welcome  -->
+<section class="store-section">
+    <p class="top-text">Our products</p>
+    <h2 class="main-heading">Welcome to our store</h2>
+
+    <div class="product-grid">
+
+        <!-- CARD 1 -->
+        <div class="product-card">
+            <span class="bs-badge1">-15%</span>
+            <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+            <img src="images/welcome1.webp">
+
+            <div class="rating">★★★★★ <span>(1)</span></div>
+
+            <h3 class="product-title">Extremely Loud And Incredibly Close</h3>
+            <p class="author">By Bokifa</p>
+            <p class="price">$259.95</p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="product-card">
+            <span class="bs-badge1">-15%</span>
+            <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+            <img src="images/welcome2.webp">
+
+            <div class="rating">★★★★★ <span>(0)</span></div>
+
+            <h3 class="product-title">The City And Its Uncertain Walls</h3>
+            <p class="author">By Bokifa</p>
+            <p class="price">$339.95</p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="product-card">
+            <span class="bs-badge1">-15%</span>
+            <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+            <img src="images/welcome3.webp">
+
+            <div class="rating">★★★★★ <span>(0)</span></div>
+
+            <h3 class="product-title">The Seven Husbands Of Evelyn Hugo</h3>
+            <p class="author">By Bokifa</p>
+            <p class="price">$29.95</p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="product-card">
+            <span class="bs-badge1">-15%</span>
+            <span class="wishlist"><i class="fa-regular fa-heart"></i></span>
+            <img src="images/welcome4.webp">
+
+            <div class="rating">★★★★★ <span>(1)</span></div>
+
+            <h3 class="product-title">The Brief Wondrous Life Of Oscar Wao</h3>
+            <p class="author">By Bokifa</p>
+            <p class="price">$319.95</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- insta -->
+<section class="insta-follow-section">
+  <div class="insta-grid">
+
+    <!-- Left Follow Box -->
+    <div class="insta-follow-box">
+      <p class="follow-title">Follow Along On<br>Our Journey</p>
+      <i class="fa-brands fa-instagram insta-icon"></i>
+      <p class="insta-id">@bokifa</p>
+    </div>
+
+    <!-- Images -->
+    <div class="insta-img-box">
+      <img src="images/insta 1.webp" alt="">
+    </div>
+
+    <div class="insta-img-box">
+      <img src="images/insta  2.webp" alt="">
+    </div>
+
+    <div class="insta-img-box">
+      <img src="images/insta 3.webp" alt="">
+    </div>
+
+    <div class="insta-img-box">
+      <img src="images/insta 4.webp" alt="">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Stay in the know -->
+  <footer class="footer">
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+
+        <h2>Stay in the know</h2>
+
+        <p>
+          Subscribe to our newsletter and stay updated on latest offers,
+          discounts and events near you.
+        </p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email id" />
+          <button>Subscribe</button>
+        </div>
+        <div class="newsletter-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="newsletter-right">
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Footer -->
+    <div class="footer-main">
+      <div class="footer-column footer-about">
+        <div class="footer-logo">
+          <img src="images/logo.png.png" alt="logo" />
+
+        </div>
+        <p class="contact-description">
+          Bokifa draws book lovers of all ages into a community, engage with
+          booklovers and meet their favourite literary personalities.
+        </p>
+
+        <p class="contact-phone">+(84) - 1800 - 4635</p>
+        <p class="contact-email">contact@example.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Category</h4>
+        <ul>
+          <li>Action Books</li>
+          <li>Comedy</li>
+          <li>Drama</li>
+          <li>Horror</li>
+          <li>Kids Books</li>
+          <li>Top 50 Books</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Useful links</h4>
+        <ul>
+          <li>Secure Shopping</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Shipping Policy</li>
+          <li>Returns Policy</li>
+          <li>Payment Option</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li>About us</li>
+          <li>Store Locator</li>
+          <li>Kids Club</li>
+          <li>Blogs</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Get in touch</h4>
+        <ul>
+          <li>Careers</li>
+          <li>Become a Franchisee</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('active');
+}
+
+function toggleDropdown(id) {
+  const menu = document.getElementById(id);
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+</script>
+</body>
+</html>
